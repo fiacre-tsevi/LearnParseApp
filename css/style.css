@@ -1,0 +1,30 @@
+
+html {
+	width: 100%; 
+   	height: 100%;
+   	overflow: hidden;
+   background: url('../img/background.jpg') center center no-repeat;
+}
+
+body {
+	background-color: rgba(255, 255, 255, .02);
+}
+
+#preload-img {
+   	position: absolute;
+   	top: 50%;
+   	left: 50%;
+   	width: 200px;
+   	height: 150px;
+   	margin-top: -75px; /* Half the height */
+   	margin-left: -100px; /* Half the width */
+   	border-radius: 50%;
+}
+
+#connexion-row {
+	margin-top: 20px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}

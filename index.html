@@ -2,17 +2,64 @@
 <html>
 <head>
 	<title>Shopping Plan</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.6.3-web/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<div class="preloader animated fadeIn">
+		<img src="img/copper-loader.gif" id="preload-img">
+	</div>
+	<div class="connexion animated fadeIn">
+		<div class="row" id="connexion-row">
+			<div class="col-md-12 text-center animated fadeInUpBig">
+				<img class="img" src="img/ShoppingPlan.png">
+			</div>
+			<!-- Register -->
+			<div class="offset-md-1 card col-md-3 animated bounceInLeft">
+				<h4 class="text-center mt-10">Sign-Up</h4>
+				<form id="register-form">
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" id="username" name="username" required="">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" name="email" required="">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" id="password" name="password">
+					</div>
+					<div class="btn btn-block btn-primary" onclick="register()">Register</div>
+					<br/>
+				</form>
+			</div>
+			<!-- Connexion -->
+			<div class="offset-md-4 card col-md-3 animated bounceInRight">
+				<h4 class="text-center mt-10">Sign-In</h4>
+				<form id="connexion-form">
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" name="email" required="">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" id="password" name="password">
+					</div>
+					<div class="btn btn-block btn-primary">Connexion</div>
+					<br/>
+				</form>
+			</div>
+		</div>
+	</div>
 
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- Init Parse -->
 	<script src="node_modules/parse/dist/parse.min.js"></script>
+	<script type="text/javascript" src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
 	<script>
 	Parse.serverURL = 'https://parseapi.back4app.com'; // Server URL
 	Parse.initialize(
@@ -20,6 +67,7 @@
 	  '75JEB5EqbpHwKGeYtmyC6BC48Z6hZSxPDigfTezP' // Shopping Plan Javascript key
 	);
 	</script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>
