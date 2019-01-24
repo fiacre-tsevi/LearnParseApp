@@ -1,0 +1,7 @@
+Access to database on back4app server config
+
+Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
+Parse.initialize(
+  '0OJMcrK0nBXuxfq9T5PXdyAccf79OCmTylpV47rn', // This is your Application ID
+  '75JEB5EqbpHwKGeYtmyC6BC48Z6hZSxPDigfTezP' // This is your Javascript key
+);
