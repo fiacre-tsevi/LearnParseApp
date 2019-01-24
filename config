@@ -1,4 +1,4 @@
-Access to database on back4app server config
+#Access to database on back4app server config
 
 Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
 Parse.initialize(
