@@ -14,7 +14,7 @@
 	<div class="connexion animated fadeIn">
 		<div class="row" id="connexion-row">
 			<div class="col-md-12 text-center animated fadeInUpBig">
-				<img class="img" src="img/ShoppingPlan.png">
+				<img class="image" src="img/ShoppingPlan.png" id="shoplogo">
 			</div>
 			<!-- Register -->
 			<div class="offset-md-1 card col-md-3 animated bounceInLeft">
@@ -22,15 +22,15 @@
 				<form id="register-form">
 					<div class="form-group">
 						<label for="username">Username</label>
-						<input type="text" class="form-control" id="username" name="username" required="">
+						<input type="text" class="form-control" id="username" name="username" required>
 					</div>
 					<div class="form-group">
 						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" name="email" required="">
+						<input type="email" class="form-control" id="email" name="email" required>
 					</div>
 					<div class="form-group">
 						<label for="password">Password</label>
-						<input type="password" class="form-control" id="password" name="password">
+						<input type="password" class="form-control" id="password" name="password" required>
 					</div>
 					<div class="btn btn-block btn-primary" onclick="register()">Register</div>
 					<br/>
@@ -41,18 +41,68 @@
 				<h4 class="text-center mt-10">Sign-In</h4>
 				<form id="connexion-form">
 					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" name="email" required="">
+						<label for="email2">Email</label>
+						<input type="email" class="form-control" id="email2" name="email" required>
 					</div>
 					<div class="form-group">
-						<label for="password">Password</label>
-						<input type="password" class="form-control" id="password" name="password">
+						<label for="password2">Password</label>
+						<input type="password" class="form-control" id="password2" name="password" required>
 					</div>
 					<div class="btn btn-block btn-primary">Connexion</div>
 					<br/>
 				</form>
 			</div>
 		</div>
+	</div>
+	<div class="mainWrapper container-fluid animated fadeIn">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+				  <a class="navbar-brand" href="#">
+				    <img src="img/ShoppingPlan.png" width="200" height="60" alt="Logo">
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <button class="btn btn-outline-light" id="toggleSideBar">
+				      	<i class="fa fa-bars"></i>
+				      </button>
+				    </ul>
+				    <form class="form-inline my-2 my-lg-0">
+				      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+				      	<i class="fa fa-search"></i>
+				      </button>
+				    </form>
+				  </div>
+				</nav>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="sidebar">
+				<div class="container mt-110">
+					<div class="row">
+						<div class="offset-sm-1 col-sm-10 text-center">	
+							<img src="img/user.png" alt="User img" class="img-thumbnail" id="userImg">
+							<h4>Username</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 wrapper-body">
+				<div class="container" id="content-box">
+					<div class="row">
+						<div class="col-12 titleBar">
+							<h2 class="nice-text lh-20">New Shopping Plan</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -68,6 +118,5 @@
 	);
 	</script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-
 </body>
 </html>

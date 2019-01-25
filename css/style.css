@@ -3,11 +3,12 @@ html {
 	width: 100%; 
    	height: 100%;
    	overflow: hidden;
-   background: url('../img/background.jpg') center center no-repeat;
+   	background: url('../img/background.jpg') center center no-repeat;
 }
 
 body {
 	background-color: rgba(255, 255, 255, .02);
+	font-family: 'Palatino linotype';
 }
 
 #preload-img {
@@ -27,4 +28,87 @@ body {
 
 .mt-10 {
 	margin-top: 10px;
+}
+
+.mt-110 {
+	margin-top: 110px;
+}
+
+#shoplogo {
+	width: 200px;
+	height: 100px;
+	opacity: .83;
+}
+
+.mainWrapper {
+	width: 100%;
+	height: 100%;
+	background: #efefef;
+	overflow: hidden;
+}
+
+.sidebar {
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	top: 0px;
+	left: 0px;
+	background: #fff;
+	border-right: 1px #eee solid;
+	z-index: 2;
+	box-shadow: 2px 0px rgba(0, 0, 0, .025);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+.wrapper-body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: #efefef;
+	z-index: 1;
+	overflow-y: scroll;
+}
+
+#content-box {
+	display: block;
+	margin-top: 130px;
+	margin-left: 22%;
+	width: 75%;
+	height: auto;
+	/*background: #bbb;*/
+	transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+.off {
+	opacity: 0;
+    left: -20%;
+}
+
+.ml-2 {
+	margin-left: 5% !important;
+	width: 90% !important;
+}
+
+#userImg {
+	opacity: .80;
+	width: 120px;
+	height: 90px;
+}
+
+.titleBar {
+	height: 100px;
+	background: #fff;
+	border: 1px #eee solid;
+}
+
+.nice-text {
+	color: #ff2602;
+}
+
+.lh-20 {
+	line-height: 88px;
 }
